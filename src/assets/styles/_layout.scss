@@ -60,8 +60,16 @@
     }
   }
   .header_etc {
+    display: flex;
+    height: 80px;
     .header_etc_list {
+      display: flex;
+      align-items: center;
+      padding-right: 30px;
       .header_etc_item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         .header_search {
           svg {
             fill: white;

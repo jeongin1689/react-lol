@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import SubLogo from "../../assets/img/sub_logo.png";
+import AlertIcon from "../../assets/img/alert_icon.png";
+import LocaleIcon from "../../assets/img/locale_icon.png";
 import { ReactComponent as HeaderLogo } from "../../assets/svg/header-logo.svg";
 import { ReactComponent as HeaderSearch } from "../../assets/svg/header-search.svg";
 
@@ -43,10 +45,18 @@ function Header(){
           <li className="header_etc_item">
             <span className="header_search"><HeaderSearch></HeaderSearch></span>
           </li>
-          <li className="header_etc_item"></li>
-          <li className="header_etc_item"></li>
-          <li className="header_etc_item"></li>
-          <li className="header_etc_item"></li>
+          <li className="header_etc_item alert_box">
+            <img src={AlertIcon} alt="주의사항"/>
+          </li>
+          <li className="header_etc_item locale_box">
+            <img src={LocaleIcon} alt="위치"/>
+          </li>
+          <li className="header_etc_item login_box">
+            <Link to="/">로그인</Link>
+          </li>
+          <li className="header_etc_item join_box">
+            <Link to="/">회원가입</Link>
+          </li>
         </ul>
       </div>
     </header>
