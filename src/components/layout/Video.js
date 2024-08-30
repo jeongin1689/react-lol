@@ -37,7 +37,7 @@ function Video(){
       <div className="video_logo">
         <img src={VideoLogo} alt="비디오 로고" />
         <div className="join_btn">
-          <button className="blue_btn">무료로 플레이하기</button>
+          <button className="blue_btn" onClick={()=>{alert('준비중입니다.')}}>무료로 플레이하기</button>
         </div>
       </div>
     </div>
